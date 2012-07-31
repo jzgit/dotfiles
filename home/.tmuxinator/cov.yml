@@ -1,0 +1,11 @@
+# ~/.tmuxinator/cov.yml
+# you can make as many tabs as you wish...
+
+project_name: Covocative
+project_root: ~/work/covocative
+pre: git pull origin master && git status
+tabs:
+  - server: rr && rails s
+  - tests: rr && beg
+  - console: rr && mvim
+  - routes: rr && rake routes

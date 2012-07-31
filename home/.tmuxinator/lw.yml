@@ -1,0 +1,9 @@
+# ~/.tmuxinator/cov.yml
+# you can make as many tabs as you wish...
+
+project_name: Launchware
+project_root: ~/work/enlight_site
+pre: git pull origin master && git status
+tabs:
+  - server: rr && rake generate preview
+  - console: rr && mvim

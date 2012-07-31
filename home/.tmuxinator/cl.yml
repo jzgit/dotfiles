@@ -1,0 +1,12 @@
+# ~/.tmuxinator/cov.yml
+# you can make as many tabs as you wish...
+
+project_name: CrowdlyLanding
+project_root: ~/work/crowdly_root/crowdly-landing
+rvm: ree@crowdly-landing
+pre: git status
+tabs:
+  - server: rr && rails s
+  - tests: rr && beg
+  - console: rr && mvim
+  - routes: rr && rake routes

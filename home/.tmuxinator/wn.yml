@@ -1,0 +1,12 @@
+# ~/.tmuxinator/cov.yml
+# you can make as many tabs as you wish...
+
+project_name: WhatNext
+project_root: ~/work/whatnext
+rvm: 1.9.3-p125@whatnext
+pre: git status
+tabs:
+  - server: rr && rails s
+  - tests: rr && beg
+  - console: rr && mvim && rq
+  - routes: rr && rake routes

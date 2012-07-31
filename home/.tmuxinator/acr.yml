@@ -1,0 +1,13 @@
+# ~/.tmuxinator/cov.yml
+# you can make as many tabs as you wish...
+
+project_name: AppCrowdly
+project_root: ~/work/crowdly_root/AppCrowdly
+rvm: 1.9.2-p180-patched@app_crowdly
+pre: git status
+tabs:
+  - server: rr && rails s
+  - tests: rr && beg
+  - console: rr && mvim
+  - routes: rr && rake routes
+  - kong: rr && cd ../kong

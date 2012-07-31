@@ -1,0 +1,10 @@
+# ~/.tmuxinator/cov.yml
+# you can make as many tabs as you wish...
+
+project_name: Unison-Citi
+project_root: ~/work/Unison
+pre:  git status
+tabs:
+  - server: rr && rails s
+  - console: rr && mvim
+  - routes: rr && rake routes

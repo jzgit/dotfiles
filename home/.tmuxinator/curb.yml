@@ -1,0 +1,11 @@
+# ~/.tmuxinator/cov.yml
+# you can make as many tabs as you wish...
+
+project_name: Curbside
+project_root: ~/curbside/curbside
+pre: git pull origin master && git status
+tabs:
+  - server: rr && rails s
+  - tests: rr && beg
+  - console: rr && mvim
+  - routes: rr && rake routes
